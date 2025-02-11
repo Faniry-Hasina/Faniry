@@ -117,7 +117,7 @@ const Products: React.FC<ProductsProps> = ({
                   e.preventDefault();
                   handleCreateProduct();
                 }}
-                className="create-product-form"
+                className="create-product-form" 
               >
                 <input
                   type="text"
