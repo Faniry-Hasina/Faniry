@@ -1,0 +1,67 @@
+.Wrapper-title {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 36px;
+  color: #013f4f;
+  h2 {
+    font-size: 30px;
+    font-weight: 500;
+    // -webkit-text-stroke: #013f4f 1px;
+    // color: rgb(0, 0, 0);
+    padding: 0;
+  }
+}
+
+.Graphe {
+  max-width: 100%;
+  display: grid;
+  width: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #013f4f;
+  }
+  .Top-Client {
+    div {
+      width: 90%;
+      height: 200px;
+      box-shadow: 0px 2px 15px 4px rgb(231, 231, 231);
+      border-radius: 10px;
+      // padding: 5px2
+    }
+    .css-15g6f27-MuiResponsiveChart-container:hover {
+      background-color: #013f4f;
+      color: white;
+    }
+  }
+  .Top-Vente {
+    div {
+      padding: 2px;
+      max-width: 220px;
+      height: 200px;
+      box-shadow: 0px 2px 15px 4px rgb(231, 231, 231);
+      border-radius: 10px;
+    }
+    .css-1lbgfbl-MuiResponsiveChart-container:hover {
+      background-color: #013f4f;
+      color: white;
+    }
+  }
+  .Top-Store {
+    div {
+      padding: 2px;
+      max-width: 220px;
+      height: 200px;
+      box-shadow: 0px 2px 15px 4px rgb(231, 231, 231);
+      border-radius: 10px;
+    }
+    .css-66gjpw-MuiResponsiveChart-container:hover {
+      background-color: #013f4f;
+      color: white;
+    }
+  }
+}

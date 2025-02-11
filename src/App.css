@@ -1,0 +1,18 @@
+body{
+    display: flex;
+}
+.Graphe{
+    padding-top: 0px;
+}
+.container{
+    display: grid;
+    /* grid-template-columns: repeat(5,1fr); */
+    height: 100vh;
+}
+.Dashboard{
+    width: 70vw;
+    padding-left: 28vw;   
+    height:auto; 
+    background-color: white;
+    /* position: relative; */
+}

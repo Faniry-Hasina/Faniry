@@ -1,0 +1,85 @@
+.list {
+  h2 {
+    font-size: 37px;
+    font-weight: 500;
+    color: #013f4f;
+  }
+}
+.list-Product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 22px;
+  padding: 0;
+}
+.product {
+  span {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+  .produit-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  align-items: center;
+  padding: 30px;
+  width: 158px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  box-shadow: 0px 2px 15px 4px rgb(231, 231, 231);
+  border-radius: 10px;
+  .nombre-produit {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    bottom:40px
+  }
+  .titre-price {
+    align-items: flex-start;
+    .details {
+      font-size: 12px;
+      font-weight: 500;
+      position: absolute;
+      right: 20px;
+      color: #013f4f;
+      // border-bottom: 1px solid black;
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: 500;
+      margin: 0;
+      height: 80px;
+    }
+    .price {
+      font-size: 12px;
+      font-weight: 500;
+      position: absolute;
+    }
+  }
+  li {
+    width: 200px;
+    height: auto;
+  }
+  .love-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    .svg-icon {
+      position: absolute;
+      top: 1px;
+      right: 1px;
+    }
+  }
+
+  .img-svg {
+    width: 40px;
+    height: 40px;
+  }
+}

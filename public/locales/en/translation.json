@@ -1,0 +1,21 @@
+{
+    "welcome": "Welcome",
+    "Dash":"Dashboard",
+    "produit":"Product",
+    "clients":"Client",
+    "store":"Store",
+    "liste":"Sales list",
+    "top-Vente":"Top Sales",
+    "top-Client":"Top Client",
+    "top-Produit":"Top Product",
+    "image":"Pictures",
+    "description":"description",
+    "prix":"Price",
+    "stock":"Store list",
+    "identifier":"identifier",
+    "Email":"Email",
+    "Contact":"Contact",
+    "Montant":"Amount",
+    "button":"button",
+    "langue":"language"
+  }

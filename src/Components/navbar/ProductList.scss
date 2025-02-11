@@ -1,0 +1,104 @@
+.Container-Product {
+  margin-top: 50px;
+  h2 {
+    font-size: 40px;
+    color: rgb(0, 48, 48);
+    font-weight: 600;
+  }
+  .Ul-Product {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .flex-Titre {
+    display: flex;
+  }
+  left: 350px;
+  width: 65vw;
+  .btn-Product {
+    border: none;
+    padding: 8px 20px;
+    height: 40px;
+  }
+  .title-list {
+    p {
+      color: rgb(255, 255, 255);
+      font-weight: 600;
+      border-bottom: 1px solid rgb(0, 48, 48);
+      font-size: 17px;
+    }
+    width: 100%;
+    border-radius: 8px 8px 8px 8px ;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 50px;
+    background-color: rgb(0, 48, 48);
+    margin-bottom: 30px;
+    .card {
+      display: flex;
+      justify-content: center;
+    }
+  }
+.list-Prod{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0px;
+  // padding-right: 60px;
+  width: 100%;
+}
+.container-productList{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+  .product-list {
+    width: 100%;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100px;
+    box-shadow: 0px 2px 15px 4px rgb(231, 231, 231);
+    border-radius: 10px;
+    .card {
+      display: flex;
+      justify-content: center;
+    }
+    p {
+      font-weight: 500;
+      font-size: 12px;
+    }
+    .img-product {
+      width: 70px;
+      overflow: hidden;
+      height: 70px;
+      border-radius: 50%;
+    }
+    .custom-btn {
+      right: 20px;
+      border: none;
+      color: white;
+      background: rgb(0, 48, 48);
+      padding: 7px 15px;
+      border-radius: 10px;
+    }
+    .custom-btn:hover {
+      cursor: pointer;
+      border: 1px solid rgb(0, 48, 48);
+      color: rgb(0, 48, 48);
+      background: rgb(255, 255, 255);
+      padding: 7px 15px;
+      border-radius: 10px;
+    }
+  }
+}
