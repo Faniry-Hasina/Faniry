@@ -1,5 +1,8 @@
 body{
     display: flex;
+    background-size: cover;
+    /* background-color: violet; */
+    background-image:url(./img/jpeg/fundo\ de\ textura\ de\ placa\ de\ circuito\ de\ tecnologia\ moderna_\ fundo\ futurista\ da\ placa\ de\ circuito\ azul.\ tecnologia\ de\ computador\ quântico.\ ilustração\ vetorial);
 }
 .Graphe{
     padding-top: 0px;
@@ -13,6 +16,8 @@ body{
     width: 70vw;
     padding-left: 28vw;   
     height:auto; 
-    background-color: white;
+    
+    /* background-color: white;
+     */
     /* position: relative; */
 }
