@@ -10,6 +10,7 @@ import SideBar from "./Components/navbar/SideBar";
 import React, { useEffect, useState } from "react";
 import { ProductList } from "./Components/navbar/Productlist";
 import { useTranslation } from "react-i18next";
+import { formatPrice } from "./Helpers";
 
 const Dashboard: React.FC = () => {
   const {t,i18n} = useTranslation();
@@ -42,7 +43,7 @@ const Dashboard: React.FC = () => {
       <SideBar />
         <div className="Wrapper-title">
           <h2>{t("welcome")}</h2>
-          <p>CA:{(calculateTotal.toFixed(0))}M</p>
+          <p>CA:{formatPrice(calculateTotal.toFixed(0))}</p>
             {/* {products.map((prod) => (
           <p>CA{prod.price}
             ${calculateTotal(products)}
