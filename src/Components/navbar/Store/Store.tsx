@@ -53,14 +53,13 @@ function Store() {
   const handleBuyProduct = (product: StockType) => {
     setCurrentProduct(product);
     setConfirmationVisible(true);
-   
   };
 
   const confirmPurchase = () => {
     setProducts((prevProducts) =>
       prevProducts.map((product) =>
         product.id === currentProduct?.id
-          ? { ...product, product: product.rating?.count ?? 0 - 1 }
+          ? { ...product,rating: { count: (product.rating?.count ?? 0) - 1 }  }
           : product
       )
       
