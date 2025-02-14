@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import "./../../App.css";
 import "../navbar/ProductList.scss";
 import SideBar from "./SideBar";
-import { Rating } from "@mui/material";
 import { useTranslation} from "react-i18next";
-import { truncateText,formatPrice } from "../../Helpers";
+import { formatPrice } from "../../Helpers";
 export type ProductList = {
   id: number;
   description?: string;
@@ -45,7 +44,7 @@ const Products: React.FC<ProductsProps> = ({
     return text.length > maxLength ? ` ${text.slice(0, maxLength)}...` : text;
   };
   const [products, setProducts] = useState<ProductList[]>([]);
-  const {t,i18n} = useTranslation();
+  const {t} = useTranslation();
   const filteredProducts = filterFunction
     ? products.filter(filterFunction)
     : products;

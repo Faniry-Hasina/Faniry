@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 
 type StockType = {
   id: number;
+  rating?: { count: number };
   title: string;
   price: string;
   stock: number;
@@ -40,6 +41,7 @@ function Store() {
     id: 0,
     title: "",
     price: "",
+    rating:{count:0},
     stock: 0,
     image: "",
     maxNameLength: 10,
@@ -51,15 +53,17 @@ function Store() {
   const handleBuyProduct = (product: StockType) => {
     setCurrentProduct(product);
     setConfirmationVisible(true);
+   
   };
 
   const confirmPurchase = () => {
     setProducts((prevProducts) =>
       prevProducts.map((product) =>
         product.id === currentProduct?.id
-          ? { ...product, stock: product.stock - 1 }
+          ? { ...product, product: product.rating?.count ?? 0 - 1 }
           : product
       )
+      
     );
     setConfirmationVisible(false);
     alert("Achat confirmé !");
@@ -78,6 +82,7 @@ function Store() {
       price: "",
       stock: 0,
       image: "",
+      rating:{ count: 0},
       maxNameLength: 20,
     });
   };
@@ -100,16 +105,16 @@ function Store() {
                 <p className="price">
                   {formatPrice(parseFloat(product.price))}
                 </p>
-                <p className="stock">In stock:{product.stock}</p>
+                <p className="stock">In stock: {product.rating?.count}</p>
                 <button
                   className={`buy-button ${
-                    product.stock === 0 ? "out-of-stock" : ""
+                    product.stock === 200 ? "out-of-stock" : ""
                   }`}
                   disabled={product.stock === 0}
                   type="button"
                   onClick={() => handleBuyProduct(product)}
                 >
-                  {product.stock === 0 ? "Out of Stock" : "Buy Now"}
+                  {product.stock === 200 ? "Out of Stock" : "Buy Now"}
                 </button>
                 <button
                   className="manage-content-button"
