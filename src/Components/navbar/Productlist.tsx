@@ -27,7 +27,7 @@ const Products: React.FC<ProductsProps> = ({
   hideTitle,
   maxNameLength = 30,
 }) => {
-  // const [products, setProducts] = useState<ProductList[]>([]);
+
   const getProduct = async () => {
     await fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())

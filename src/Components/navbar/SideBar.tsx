@@ -4,14 +4,12 @@ import NotifSvg from "./Svg/Notif";
 import CommentSvg from "./Svg/Commentaire";
 import MenuSvg from "./Svg/Menu";
 import { useTranslation } from "react-i18next";
-import i18n from "./../../i18n";
-import ClientSvg from "./Svg/ClientSvg";
-import EnSvg from "./Svg/EngSvg";
-import FrSvg from "./Svg/FranceSvg";
-import React, { useState, useEffect } from "react";
+
+
+import  { useState, useEffect } from "react";
 import DisconnecteSvg from "./Svg/DissconnectSvg";
 import Language from "./Language";
-import { t } from "i18next";
+
 
 
 

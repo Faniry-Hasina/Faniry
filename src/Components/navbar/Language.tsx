@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+// import { useEffect, useState } from "react"
 import EnSvg from "./Svg/EngSvg"
 import FrSvg from "./Svg/FranceSvg"
 import { useTranslation } from "react-i18next"
@@ -14,26 +14,15 @@ const languageData = [{
   code: 'Francais',
   component: <FrSvg/>
 }]
-
 const Language: React.FC = () => {
-  const [language, setLanguage] = useState(languageData[0])
-  const {t,i18n} = useTranslation();
-
-
+  const {i18n} = useTranslation();
   const changeLanguage = (lng: string) => {
     console.log( i18n.languages)
     i18n.changeLanguage(lng);
-    // window.location.reload()
-
-
   };  
-
-
     return (
-
 <>
 {
-
 languageData.map((langue)=> (
   <a  onClick={() => changeLanguage(langue.shortcode)}>
   <span>
