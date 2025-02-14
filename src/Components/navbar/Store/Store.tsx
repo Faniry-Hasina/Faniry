@@ -4,7 +4,7 @@ import SideBar from "../SideBar";
 import "../navbar.scss";
 import { useEffect, useState } from "react";
 import { truncateText, formatPrice } from "../../../Helpers";
-import { t } from "i18next";
+// import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 
 type StockType = {
@@ -23,6 +23,7 @@ function Store() {
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
+        console.log(loading)
         console.log(data);
         setLoading(false);
         return data;
@@ -80,7 +81,7 @@ function Store() {
       maxNameLength: 20,
     });
   };
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="Dashboard">
       <SideBar />
@@ -114,7 +115,7 @@ function Store() {
                   className="manage-content-button"
                   onClick={() => handleDeleteProduct(product.id)}
                 >
-                  Manage Content
+                  {t("liste")}
                 </button>
               </div>
             ))}
