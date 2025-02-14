@@ -62,7 +62,6 @@ function Store() {
           ? { ...product,rating: { count: (product.rating?.count ?? 0) - 1 }  }
           : product
       )
-      
     );
     setConfirmationVisible(false);
     alert("Achat confirmé !");
@@ -113,13 +112,13 @@ function Store() {
                   type="button"
                   onClick={() => handleBuyProduct(product)}
                 >
-                  {product.stock === 200 ? "Out of Stock" : "Buy Now"}
+                  {t("buy now")}{product.stock === 200 ? "Out of Stock" :""}
                 </button>
                 <button
                   className="manage-content-button"
                   onClick={() => handleDeleteProduct(product.id)}
                 >
-                  {t("liste")}
+                  {t("manage")}
                 </button>
               </div>
             ))}

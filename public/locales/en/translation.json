@@ -17,5 +17,8 @@
     "Contact":"Contact",
     "Montant":"Amount",
     "button":"button",
-    "langue":"language"
+    "langue":"language",
+     "buy now":"buy now",
+     "manage":"manage"
+   
   }

@@ -3,21 +3,22 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpBackend from 'i18next-http-backend';
 
-const languages = [ "en", "fr"];
+const languages = ["en", "fr"];
+
 i18n
-  .use(HttpBackend) 
-  .use(LanguageDetector) 
-  .use(initReactI18next) 
+  .use(HttpBackend)
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
-    fallbackLng: 'en', 
+    fallbackLng: 'en',
+    supportedLngs: languages,  
     backend: {
       loadPath: "/locales/{{lng}}/{{ns}}.json",
     },
-    debug: true, 
+    debug: true,
     interpolation: {
       escapeValue: false,
     },
-    languages
   });
 
 export default i18n;
