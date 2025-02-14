@@ -2,13 +2,16 @@ body{
     display: flex;
     background-size: cover;
     /* background-color: violet; */
-    background-image:url(./img/jpeg/fundo\ de\ textura\ de\ placa\ de\ circuito\ de\ tecnologia\ moderna_\ fundo\ futurista\ da\ placa\ de\ circuito\ azul.\ tecnologia\ de\ computador\ quântico.\ ilustração\ vetorial);
+    /* background-image:url(./img/jpeg/back.jpeg); */
+    
 }
 .Graphe{
     padding-top: 0px;
 }
 .container{
     display: grid;
+    
+    background-size: cover;
     /* grid-template-columns: repeat(5,1fr); */
     height: 100vh;
 }
