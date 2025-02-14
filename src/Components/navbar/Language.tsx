@@ -1,34 +1,51 @@
 import { useEffect, useState } from "react"
 import EnSvg from "./Svg/EngSvg"
 import FrSvg from "./Svg/FranceSvg"
+import { useTranslation } from "react-i18next"
 
-type LanguageProps = {
-    shortcode : String
+
+
+const languageData = [{
+  shortcode : 'en-US',
+  code: 'English',
+  component: <EnSvg />
+},{
+  shortcode: 'fr-Fr',
+  code: 'Francais',
+  component: <FrSvg/>
+}]
+
+const Language: React.FC = () => {
+  const [language, setLanguage] = useState(languageData[0])
+  const {t,i18n} = useTranslation();
+
+
+  const changeLanguage = (lng: string) => {
+    console.log( i18n.languages)
+    i18n.changeLanguage(lng);
+    // window.location.reload()
+
+
+  };  
+
+
+    return (
+
+<>
+{
+
+languageData.map((langue)=> (
+  <a  onClick={() => changeLanguage(langue.shortcode)}>
+  <span>
+ {
+   langue.component
+ }
+ <p>{langue.code}</p>
+</span>
+ </a> 
+))   
 }
-
-const Language: React.FC<LanguageProps> = ({shortcode}) => {
-  const [language, setLanguage] = useState({
-    shortcode : 'en',
-    code: 'English',
-    component: <EnSvg />
-  })
-  useEffect(() => {
-    switch(shortcode){
-      case 'fr' : 
-      setLanguage({
-        shortcode: 'fr',
-        code: 'Francais',
-        component: <FrSvg/>
-      })
-    }
-  })
-
-    return <span>
-    {
-      language.component
-    }
-    <p>{language.code}</p>
-  </span>
+</>
+    ) 
 }
-
 export default Language

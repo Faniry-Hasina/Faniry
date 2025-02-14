@@ -13,17 +13,15 @@ import DisconnecteSvg from "./Svg/DissconnectSvg";
 import Language from "./Language";
 import { t } from "i18next";
 
+
+
 export default function SideBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [multiLangue, setmultiLangue] = useState(false);
   const [notificationsOpen, setNotificationsOpen] = useState(false);
   const [commentairesOpen, setCommentairesOpen] = useState(false);
 
-  const changeLanguage = (lng: string) => {
-    console.log( i18n.languages)
-    i18n.changeLanguage(lng);
-
-  };
+ 
   const {t,i18n} = useTranslation();
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -77,16 +75,8 @@ export default function SideBar() {
           {t("langue")}
           {multiLangue && (
             <div className="Wrapper-Btn">
-              {
-                i18n.options.languages.map(
-                  (langue:any,index:any) => {
-                   return  <a key={index} onClick={() => changeLanguage(langue)}>
-                    <Language shortcode={langue} />
-                  </a>                    
-                  }
-                )
-              }
-
+              
+<Language/>
             </div>
           )}
         </button>

@@ -52,7 +52,7 @@ const Products: React.FC<ProductsProps> = ({
     ? filteredProducts.slice(0, limit)
     : filteredProducts;
     const [confirmationVisible, setConfirmationVisible] = useState(false);
-  const [currentProduct, setCurrentProduct] = useState<ProductList | null>(null);
+  const [currentProduct] = useState<ProductList | null>(null);
   const [createMode, setCreateMode] = useState(false);
   const [newProduct, setNewProduct] = useState({
     id: 0,
@@ -64,14 +64,16 @@ const Products: React.FC<ProductsProps> = ({
     rating:{count:0},
     maxNameLength: 10,
   });
-  const handleDeleteProduct = (id: number) => {
-    const updatedProducts = products.filter((product) => product.id !== id);
-    setProducts(updatedProducts);
-  };
-  const handleBuyProduct = (product:ProductList) => {
-    setCurrentProduct(product);
-    setConfirmationVisible(true);
-  };
+  // const handleDeleteProduct = (id: number) => {
+  //   const updatedProducts = products.filter((product) => product.id !== id);
+  //   setProducts(updatedProducts);
+  //   console.log(handleDeleteProduct)
+  // };
+  // const handleBuyProduct = (product:ProductList) => {
+  //   setCurrentProduct(product);
+  //   setConfirmationVisible(true);
+  //   console.log(handleBuyProduct)
+  // };
 
   const confirmPurchase = () => {
     setProducts((prevProducts) =>
