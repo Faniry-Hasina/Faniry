@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import ClientSvg from "./Svg/ClientSvg";
 import DashSvg from "./Svg/dashSvg";
 const Navbar: React.FC = () => {
-  const {t,i18n} = useTranslation();
+  const {t} = useTranslation();
   return (
     <div className="navBar">
       <img src="src/img/jpeg/hu-jiarui-Luhg-tamGfA-unsplash.jpg" alt="logo" />

@@ -15,6 +15,7 @@ function Login() {
     if (savedName) {
       setName(savedName);
     }
+    console.log(name)
   }, []);
 
   const [email, setEmail] = useState("");

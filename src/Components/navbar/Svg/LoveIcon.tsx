@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 export default function Svgicon() {
   const [background, setBackground] = useState("none");
   const toggleBackgroundColor = () => {

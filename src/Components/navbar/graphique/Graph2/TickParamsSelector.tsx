@@ -15,7 +15,7 @@ const chartSetting = {
 };
 
 export default function TopVente() {
-  const {t,i18n} = useTranslation();
+  const {t} = useTranslation();
   return (
     <div className="Top-Vente">
       <p>{t("top-Vente")}</p>

@@ -3,7 +3,7 @@ import { dataset } from "./Graph3";
 import "./../GrapheStyle.scss"
 import { useTranslation } from "react-i18next";
 export default function GridDemo() {
-  const {t,i18n} = useTranslation();
+  const {t} = useTranslation();
   return (
     <div className="Top-Client">
       <p>{t("top-Client")}</p>
