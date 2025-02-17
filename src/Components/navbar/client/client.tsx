@@ -1,5 +1,5 @@
 import "./client.scss";
-import femme from "../../../img/jpeg/femme.jpg";
+import femme from "femme.jpg";
 import Lina from "../../../img/jpeg/2.jpg";
 import Faniry from "../../../img/jpeg/john.jpg";
 import "./../../../App.css";
@@ -15,12 +15,13 @@ type Client = {
   email:string;
 };
 const Clients: React.FC = () => {
+  const IMAGES : any = {femme:"/femme.jpg",lina:"/2.jpg",faniry:"john.jpg"}
   const clients: Client[] = [
-    { id: 1, name: "Faniry Hasina", contact: "032 89 813 19", img: femme ,email:"faniry@gmail.com"},
-    { id: 2, name: "Marie Linah", contact: "033 21 304 62", img: Lina ,email:"Linah@gmail.com"},
-    { id: 3, name: "Amazia rajao", contact: "032 21 888 67", img: Faniry ,email:"Rajao@gmail.com"},
-    { id: 3, name: "Doara niaina", contact: "034 21 309 67", img: Lina,email:"Doara@gmail.com"},
-    { id: 3, name: "Marie Saunia", contact: "038 21 304 67", img: Faniry ,email:"Marie@gmail.com"},
+    { id: 1, name: "Faniry Hasina", contact: "032 89 813 19", img: IMAGES.femme,email:"faniry@gmail.com"},
+    { id: 2, name: "Marie Linah", contact: "033 21 304 62", img: IMAGES.lina ,email:"Linah@gmail.com"},
+    { id: 3, name: "Amazia rajao", contact: "032 21 888 67", img: IMAGES.faniry ,email:"Rajao@gmail.com"},
+    { id: 3, name: "Doara niaina", contact: "034 21 309 67", img:IMAGES.lina ,email:"Doara@gmail.com"},
+    { id: 3, name: "Marie Saunia", contact: "038 21 304 67", img: IMAGES.faniry ,email:"Marie@gmail.com"},
   ];
   const {t} = useTranslation();
   return (

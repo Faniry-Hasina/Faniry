@@ -112,7 +112,7 @@ export default function SideBar() {
               <div className="commentaires">
                 <div className="img-p">
                   <img
-                    src="src/img/jpeg/john.jpg"
+                    src="/john.jpg"
                     alt="Person"
                     className="img-p"
                   />
@@ -122,7 +122,7 @@ export default function SideBar() {
               <div className="commentaires">
                 <div className="img-p">
                   <img
-                    src="src/img/jpeg/john.jpg"
+                    src="/john.jpg"
                     alt="Person"
                     className="img-p"
                   />
@@ -133,7 +133,7 @@ export default function SideBar() {
               <div className="commentaires">
                 <div className="img-p">
                   <img
-                    src="src/img/jpeg/john.jpg"
+                    src="/john.jpg"
                     alt="Person"
                     className="img-p"
                   />
@@ -144,7 +144,7 @@ export default function SideBar() {
               <div className="commentaires">
                 <div className="img-p">
                   <img
-                    src="src/img/jpeg/john.jpg"
+                    src="/john.jpg"
                     alt="Person"
                     className="img-p"
                   />
@@ -156,7 +156,7 @@ export default function SideBar() {
               <div className="commentaires">
                 <div className="img-p">
                   <img
-                    src="src/img/jpeg/john.jpg"
+                    src="/john.jpg"
                     alt="Person"
                     className="img-p"
                   />
@@ -168,7 +168,7 @@ export default function SideBar() {
               <div className="commentaires">
                 <div className="img-p">
                   <img
-                    src="src/img/jpeg/john.jpg"
+                    src="/john.jpg"
                     alt="Person"
                     className="img-p"
                   />
@@ -180,7 +180,7 @@ export default function SideBar() {
               <div className="commentaires">
                 <div className="img-p">
                   <img
-                    src="src/img/jpeg/john.jpg"
+                    src="/john.jpg"
                     alt="Person"
                     className="img-p"
                   />
@@ -192,7 +192,7 @@ export default function SideBar() {
               <div className="commentaires">
                 <div className="img-p">
                   <img
-                    src="src/img/jpeg/john.jpg"
+                    src="/john.jpg"
                     alt="Person"
                     className="img-p"
                   />
@@ -205,7 +205,7 @@ export default function SideBar() {
           )}
         </div>
         <img
-          src="src/img/jpeg/Calamardo DRILL.jpeg"
+          src="/Calamardo DRILL.jpeg"
           alt="Profile"
           className="profil-img"
         />
