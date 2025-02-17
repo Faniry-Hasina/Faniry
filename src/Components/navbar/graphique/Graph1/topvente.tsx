@@ -29,7 +29,6 @@ export default function PieArcLabel() {
 }
 
 const size = {
-  width: 400,
   height: 200,
 };
 
