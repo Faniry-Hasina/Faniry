@@ -25,8 +25,7 @@ export default function TopVente() {
         series={[{ dataKey: "seoul", label: "Seoul rainfall", valueFormatter }]}
         layout="horizontal"
         grid={{ vertical: true }}
-        {...chartSetting}
-      />
+        {...chartSetting}/>
     </div>
   );
 }
