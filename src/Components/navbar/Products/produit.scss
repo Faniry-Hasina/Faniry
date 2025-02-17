@@ -9,7 +9,7 @@
   padding: 0!important;
   max-width: 98%;
   display: grid;
-  width: 95%;
+  width: auto;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   gap:20px;
@@ -41,6 +41,7 @@
     position: absolute;
     font-size: 12px;
     font-weight: 500;
+    left: 40%;
     bottom:40px
   }
   .titre-price {

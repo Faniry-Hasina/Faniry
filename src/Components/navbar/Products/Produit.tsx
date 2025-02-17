@@ -89,6 +89,6 @@ const Products: React.FC<ProductsProps> = ({
         ))}
       </ul>
     </div>
-  );
+  )
 };
 export default Products;
