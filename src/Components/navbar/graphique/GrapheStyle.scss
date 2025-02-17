@@ -3,7 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 36px;
+  // padding-right: 36px;
+  width: 95%;
   color: #013f4f;
   h2 {
     font-size: 30px;
@@ -14,12 +15,12 @@
   }
 }
 
-.Graphe {
-  max-width: 98%;
+
+.container-Graphe{
   display: grid;
-  width: auto;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
+  width: 95%;
+  gap: 30px;
   p {
     font-size: 20px;
     font-weight: 500;
@@ -27,41 +28,54 @@
   }
   .Top-Client {
     div {
-      width: 80%;
-      height: 200px;
+      width: 100%;
+      height: 202px;
       box-shadow: 0px 2px 15px 4px rgb(231, 231, 231);
       border-radius: 10px;
       // padding: 5px2
     }
+    .css-15g6f27-MuiResponsiveChart-container{
+      width:100%;
+    }
     .css-15g6f27-MuiResponsiveChart-container:hover {
-      background-color: #013f4f;
+      background-color: rgb(192, 206, 206);
       color: white;
+      width:100%;
     }
   }
+
   .Top-Vente {
     div {
       padding: 2px;
-      max-width: 250px;
+      max-width:100%;
       height: 200px;
       box-shadow: 0px 2px 15px 4px rgb(231, 231, 231);
       border-radius: 10px;
     }
+    .css-1lbgfbl-MuiResponsiveChart-container{
+      width:100%;
+    }
     .css-1lbgfbl-MuiResponsiveChart-container:hover {
-      background-color: #013f4f;
+      background-color:rgb(192, 206, 206);
       color: white;
+      width:100%;
     }
   }
   .Top-Store {
     div {
       padding: 2px;
-      max-width: 250px;
+      max-width: 100%;
       height: 200px;
       box-shadow: 0px 2px 15px 4px rgb(231, 231, 231);
       border-radius: 10px;
     }
+    .css-66gjpw-MuiResponsiveChart-container{
+      width:100%;
+    }
     .css-66gjpw-MuiResponsiveChart-container:hover {
-      background-color: #013f4f;
+      background-color:rgb(192, 206, 206);
       color: white;
+      width:100%;
     }
   }
 }

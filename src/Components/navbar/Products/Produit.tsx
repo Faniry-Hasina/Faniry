@@ -58,7 +58,6 @@ const Products: React.FC<ProductsProps> = ({
     <div>
       {!hideTitle && <h2>Products</h2>}
       <ul className="list-Product">
-     
         {limitedProducts.map((product) => (
           <li className="product" key={product.id}>
             {img && product.image && (

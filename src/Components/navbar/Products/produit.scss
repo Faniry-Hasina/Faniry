@@ -6,9 +6,10 @@
   }
 }
 .list-Product {
-  max-width: 100%;
+  padding: 0!important;
+  max-width: 98%;
   display: grid;
-  width: auto;
+  width: 95%;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   gap:20px;
@@ -25,9 +26,10 @@
     margin-bottom: 20px;
   }
   align-items: center;
-  padding: 30px;
-  width: 158px;
-  height: 190px;
+  padding: 34px;
+  width: 100%;
+  max-width: 190px;
+  height: 200px;
   display: flex;
   background-color: white;
   flex-direction: column;
@@ -86,3 +88,5 @@
     height: 40px;
   }
 }
+
+
