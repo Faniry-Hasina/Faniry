@@ -9,6 +9,9 @@ body {
   background-color: #000000;
   width: 100vw;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
 }
 .main-content {
   display: flex;
@@ -105,7 +108,7 @@ header {
     gap: 20px;
     align-items: center;
     flex-wrap: row-reverse;
-    padding-left: 42vw;
+    padding-left: 50vw;
     button{
       padding: 4px 10px;
       border: 1px solid rgb(0, 48, 48);

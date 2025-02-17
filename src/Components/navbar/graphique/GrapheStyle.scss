@@ -15,7 +15,7 @@
 }
 
 .Graphe {
-  max-width: 100%;
+  max-width: 98%;
   display: grid;
   width: auto;
   grid-template-columns: 1fr 1fr 1fr;
@@ -27,7 +27,7 @@
   }
   .Top-Client {
     div {
-      width: 90%;
+      width: 80%;
       height: 200px;
       box-shadow: 0px 2px 15px 4px rgb(231, 231, 231);
       border-radius: 10px;
@@ -41,7 +41,7 @@
   .Top-Vente {
     div {
       padding: 2px;
-      max-width: 220px;
+      max-width: 250px;
       height: 200px;
       box-shadow: 0px 2px 15px 4px rgb(231, 231, 231);
       border-radius: 10px;
@@ -54,7 +54,7 @@
   .Top-Store {
     div {
       padding: 2px;
-      max-width: 220px;
+      max-width: 250px;
       height: 200px;
       box-shadow: 0px 2px 15px 4px rgb(231, 231, 231);
       border-radius: 10px;

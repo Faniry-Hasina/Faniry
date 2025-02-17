@@ -50,7 +50,6 @@ const Dashboard: React.FC = () => {
           </p>
         ))} */}
         </div>
-
         <div className="Graphe">
           <TopVente/>
           <PieArcLabel />
