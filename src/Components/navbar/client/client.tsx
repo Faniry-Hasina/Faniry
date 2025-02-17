@@ -1,7 +1,7 @@
 import "./client.scss";
-import femme from "femme.jpg";
-import Lina from "../../../img/jpeg/2.jpg";
-import Faniry from "../../../img/jpeg/john.jpg";
+// import femme from "femme.jpg";
+// import Lina from "../../../img/jpeg/2.jpg";
+// import Faniry from "../../../img/jpeg/john.jpg";
 import "./../../../App.css";
 import SideBar from "../SideBar";
 import "../ProductList.scss";

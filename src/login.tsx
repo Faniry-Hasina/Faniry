@@ -33,7 +33,7 @@ function Login() {
         <form onSubmit={handleSubmit} className="login-form">
           <div className="logo-profil">
             <img
-              src="./hu-jiarui-Luhg-tamGfA-unsplash.jpg"
+              src="/hu-jiarui-Luhg-tamGfA-unsplash.jpg"
               alt="Logo"
               className="logo"
             />
