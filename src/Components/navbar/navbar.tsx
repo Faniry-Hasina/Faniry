@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
   const {t} = useTranslation();
   return (
     <div className="navBar">
-      <img src="src/img/jpeg/hu-jiarui-Luhg-tamGfA-unsplash.jpg" alt="logo" />
+      <img src="/hu-jiarui-Luhg-tamGfA-unsplash.jpg" alt="logo" />
     <nav>
       <ul className="ul-nav" style={{ display: "flex", gap: "20px", listStyle: "none" ,flexDirection:"column",width:"20vw",padding:"0px"}}>
         <li className="list-nav"><DashSvg/><Link to="/dashboard" className="link_style">{t("Dash")}</Link></li>
