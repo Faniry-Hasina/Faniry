@@ -70,7 +70,7 @@ const Products: React.FC<ProductsProps> = ({
               </span>
             )}
             <div className="love-icon">
-              <img className="img-svg" src="./src/img/png/svg.png" alt="" />
+              <img className="img-svg" src="/svg.png" alt="" />
               <Svgicon />
             </div>
             <p className="nombre-produit">stock:{product.rating.count}</p>
